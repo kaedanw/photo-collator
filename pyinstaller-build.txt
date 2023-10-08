@@ -1,0 +1,5 @@
+# <CustomTkinter Location>
+pip show customtkinter
+
+# Pyinstaller Build Command
+pyinstaller --noconfirm --onedir --windowed --add-data "<CustomTkinter Location>/customtkinter;customtkinter/"  "<Path to Python Script>.photo-collator-ctk.py"
