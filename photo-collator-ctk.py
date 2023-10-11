@@ -176,6 +176,7 @@ def submit():
 # Create the main application window
 app = ctk.CTk()
 app.title("Photo Collator")
+app.resizable(False, False)
 
 # Create and place widgets
 folder_path_label = ctk.CTkLabel(app, text="Folder Location of Photos:").grid(row=0, column=0, padx=10, pady=5, sticky='E')
