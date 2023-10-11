@@ -3,3 +3,6 @@ pip show customtkinter
 
 # Pyinstaller Build Command
 pyinstaller --noconfirm --onedir --windowed --add-data "<CustomTkinter Location>/customtkinter;customtkinter/"  "<Path to Python Script>.photo-collator-ctk.py"
+
+example:
+pyinstaller -n photo-collator --onedir --windowed --add-data "c:/users/<user>/appdata/local/programs/python/python310/lib/site-packages/customtkinter;customtkinter/"  "photo-collator-ctk.py" --exclude-module Pillow --exclude-module PIL --exclude-module numpy
